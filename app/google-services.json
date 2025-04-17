@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "447556644137",
+    "project_id": "iamcalm-c8d55",
+    "storage_bucket": "iamcalm-c8d55.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447556644137:android:c38bd03493b88003dc9b38",
+        "android_client_info": {
+          "package_name": "com.example.iamcalmapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447556644137-ur3kdubb5281cglisv1ka3ejljt9o415.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iamcalmapp",
+            "certificate_hash": "81f0a915d83fec93f055a5c35bf6cac4f0d59072"
+          }
+        },
+        {
+          "client_id": "447556644137-9en4l58gvcbt28mq8hehdcm9ka0iu57s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs_mlG9jjqOMQbSX5oW7CsaId3WoyKEdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447556644137-9en4l58gvcbt28mq8hehdcm9ka0iu57s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

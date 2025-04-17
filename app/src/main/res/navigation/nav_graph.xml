@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.iamcalmapp.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.iamcalmapp.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.iamcalmapp.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.iamcalmapp.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_popularFragment"
+            app:destination="@id/popularFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/popularFragment"
+        android:name="com.example.iamcalmapp.fragments.PopularFragment"
+        android:label="fragment_popular"
+        tools:layout="@layout/fragment_popular" />
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.example.iamcalmapp.fragments.TimerFragment"
+        android:label="fragment_timer"
+        tools:layout="@layout/fragment_timer" />
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.iamcalmapp.fragments.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" >
+        <action
+            android:id="@+id/action_libraryFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.iamcalmapp.fragments.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.iamcalmapp.fragments.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.example.iamcalmapp.fragments.AddNoteFragment"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note" />
+</navigation>
